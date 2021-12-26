@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MetaDao</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./img/favicon.ico">
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      font-family: Menlo-Regular;
+    }
+    div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, header, hgroup, nav, section, article, aside, footer, figure, figcaption, menu, button {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-size: inherit;
+      font-weight: normal;
+    }
+
+    *, *:before, *:after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    .dao_div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      background-image: url(./img/bg.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    .head_text {
+      opacity: 0.4;
+      font-size: 27px;
+      color: #FFFFFF;
+      letter-spacing: 12px;
+      margin-top: 32px;
+    }
+    .link_div {
+      display: flex;
+      flex-direction: row;
+      margin-top: 110px;
+      cursor: pointer;
+    }
+    .link_div > div {
+      flex: 1;
+      height: 186px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-size: 100% 100%;
+      background-image: url(./img/link_bg.png);
+      background-repeat: no-repeat;
+    }
+    .link_div > div > a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-decoration:none;
+    }
+
+    .link_div > div img {
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+    }
+    .link_div > div span {
+      font-size: 19px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+    .foot_text {
+      opacity: 0.5;
+      font-size: 16px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      margin-top: 75px;
+      padding-bottom: 20px;
+    }
+    @media screen and (max-width:992px) {
+      .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+      .dao_div {
+        justify-content: center;
+      }
+    }
+
+    @media screen and (min-width:992px) {
+      .wrapper {
+        width: 900px;
+        margin: 0 auto
+      }
+      .dao_div {
+        justify-content: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="home" class="dao_div">
+  <div class="wrapper">
+    <img class="head_logo" src="./img/logo.png"/>
+    <p class="head_text">Coming soon…</p>
+    <div class="link_div">
+      <div>
+        <a href="https://t.me/meta_dao_" target="_blank">
+          <img src="./img/Telegram.png" alt=""/>
+          <span>Telegram</span>
+        </a>
+      </div>
+
+      <div>
+        <a href="https://twitter.com/MetaDao___" target="_blank">
+          <img src="./img/TWitter.png" alt=""/>
+          <span>TWitter</span>
+        </a>
+      </div>
+    </div>
+    <p class="foot_text">© 2021 by MetaDao</p>
+  </div>
+</div>
+</body>
+<script>
+   window.onload = function () {
+      document.getElementById("home").style.height = document.documentElement.clientHeight + 'px';
+   }
+</script>
+</html>
